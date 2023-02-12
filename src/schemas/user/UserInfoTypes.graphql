@@ -1,0 +1,22 @@
+type UserInfoResponse {
+    contactDetails: UserContactDetails
+}
+
+type UserContactDetails {
+    name: [String]
+    lastName: [String]
+    address: AddressDetails
+    phone: PhoneDetails
+}
+
+type PhoneDetails {
+    code: String
+    number: String
+}
+
+type AddressDetails {
+    direction: String
+    city: String
+    country: String
+    zipcode: String
+}
